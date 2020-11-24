@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Hello, world!</title>
   </head>
-  <body>     
+  <body>   
+    <div class="fixed-top">
      <div class="container-fluid">
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <navv class="navbar navbar-expand-lg navbar-light" style="background-color: #e0ff4f;" id="nav">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -23,103 +29,181 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#about">Home <span class="sr-only"></span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#little-social">The Little Social</a>
+                    <a class="dropdown-item" href="#hypeman">Hypeman</a>
+                    <a class="dropdown-item" href="#weather-app">Weather App</a>
+                    <a class="dropdown-item" href="#task-planner">Task Planner</a>
+                    <a class="dropdown-item" href="#dom-exercises">DOM exercises</a>
+                    <a class="dropdown-item" href="#testing">Jasmine testing</a>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
             </div>
-       </nav>
-            <div class="jumbotron">
-                <h1 class="display-4" id="about">Hello, world!</h1>
-                <p class="lead">I'm hosted with GitHub Pages.</p>
-                <hr class="my-4">
-                <p>About</p>
             </div>
+    </div>
+  </nav> 
+  
+<section id="about">
+       <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <img src="images/cover.jpg" class="card-img" id="cover" alt="...">
+          <div class="container card-img-overlay">
+            <div class="inner cover">
+              <br>
+              <h1 class="cover-heading">Hi! I am Irina.</h1>
+              <br>
+              <h4>Welcome to my portfolio. </h4>
+              <p class="lead"><br> 
+                I'm a web developer with bookkeeping and office administration background based in Melbourne, Australia. I love structure and order.
+                <br>
+                <br>My focus is mobile-first responsive websites with HTML, CSS, Bootstrap, JavaScript and React. I have also worked with WordPress. 
+                <br>I use Git for all my programming work. Check out my <a href="https://github.com/vasiliygenadiy"><strong>GitHub</strong></a> page for projects and contributions to other open source projects.                  
+                I primarily use Visual Studio Code text editor for coding. 
+                <br>
+                <br>I have some professional experience with Adobe Creative Suite, XD in Particular. In November 2020 I have participated in Startup Weekend where as a team we have created a wireframe and prototype. After several iterations it became the final design. You can see it <a href="#hypeman"><strong>here.</strong></a>
+                <br>
+                <br>In a quest for keeping myself updated, I attend meetups and participate in hackathons.
+                <br>I am always experimenting and always learning.
+              </p>
+              <p class="lead">
+                <a href="#projects" class="btn btn-lg btn-default">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
     <section id="projects">
+      <div class="container">
       <h2 id="projects">My Projects</h2>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card" id="little-social">
+              <img src="images/the-little-social.png" class="card-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Little Social Cafe Website. Built during Hach4Health Hachathon 2020</h5>
+                <p class="card-text">Website for Youth Projects Charity Organisation and their new cafe in Alfred Hospital.</p>
+                <a href="http://52.65.157.0/" class="btn btn-primary">See the project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" id="hypeman">
+              <img src="images/hypeman.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hypeman Application Prototype. Build during Start-Up Weekend 2020</h5>
+                  <p class="card-text">A positive affirmation app that hypes up before an important event, when you need a little boost to push you throght the day.</p>
+                  <a href="https://xd.adobe.com/view/f1b0c7a8-1304-430f-9585-dbd010758b11-a4e3/?fullscreen&hints=off" class="btn btn-primary">See the prototype</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" id="weather-app">
+              <img src="images/weatherApi.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">What is the weather today?</h5>
+                  <p class="card-text">This is a simple weather app that is using api. Check the weather in your favourite city.</p>
+                  <a href="https://github.com/vasiliygenadiy/weatherApp" class="btn btn-primary">Go to project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" id="task-planner">
+              <img src="images/group-project.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Task Planner </h5>
+                <p class="card-text">This a Final Group Project for Web Development Bootcamp facilitated by Generation Australia and Academy Xi.</p>
+                <a href="https://github.com/vasiliygenadiy/taskPlannerGroupProject" class="btn btn-primary">Go project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+          <div class="card" id="dom-exercises">
+            <img src="images/dom-exercises.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dom Exercises</h5>
+                <p class="card-text">This is a collection of basic JavaScript exercises.</p>
+                <a href="https://github.com/vasiliygenadiy/dom-exercises" class="btn btn-primary">See the code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+          <div class="card" id="testing">
+              <img src="images/testing.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Writing tests with Jasmine</h5>
+                <p class="card-text">Basics of writing a test for javascript.</p>
+                <a href="https://github.com/vasiliygenadiy/testing-assessment" class="btn btn-primary">See the code</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
       </section>
-      <div>
-      <h3 id="contacts">Contacts</h3>
-      <span><a href="https://github.com/vasiliygenadiy">GitHub</span></a>
-      <span><a href="https://twitter.com/stepanktank">Twitter</span></a>
-      <span><a href="https://www.linkedin.com/in/irina-kose-482745199">LinkedIn<span></a>
-      <span><a href="mailto:irina.kose@gmail.com">Email</span></a>
-      </div>
-  </div>
-  <br>
-  <br>
-    <footer></footer>
+
+    
+
+      <section id="contacts">
+        <div class="site-wrapper">
+          <div class="site-wrapper-inner">
+            <h2>Contacts</h2>
+              <h4>Say Hi! Get in touch.</h4>
+              <br>
+                <div class="container">
+                  <p><svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                      <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      </svg> Melbourne, Australia</p>
+                  <p> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pen-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                      </svg> Write me an <a href="mailto:irina.kose@gmail.com"> email</a></p>
+                  <p><svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-person-check-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                      </svg> Networking via <a href="https://www.linkedin.com/in/irina-kose-web-developer/"> LinkedIn</a></p>
+                  <p><svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-emoji-laughing-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5c-.218 0-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5zm5.331 3a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zm-1.746-2.765C10.836 6.896 11 7 11 6.5c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5c0 .501.164.396.415.235.165-.106.367-.235.585-.235.218 0 .42.13.585.235z"/>
+                      </svg> Check my <a href="https://github.com/vasiliygenadiy"> GitHub</a> profile</p>                        
+          </div>
+        </div>
+      </section>
+ 
+    <footer>    
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div id="icons">
+          <a class="navbar-brand" href="https://github.com/vasiliygenadiy">
+            <img src="images/GitHub-Mark-32px.png">
+          </a>
+
+          <a class="navbar-brand" href="https://www.linkedin.com/in/irina-kose-web-developer/">
+            <img src="images/iconfinder_2018_social_media_popular_app_logo_linkedin_3228550.png">
+          </a>
+
+          <a class="navbar-brand" href="mailto:irina.kose@gmail.com">
+            <img src="images/iconfinder_mail_287692.png">
+          </a>
+        </div> 
+        <div>
+          <a href="#about" class="btn btn-light">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 11.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg>
+        </a>
+        </div>
+      </nav>   
+    </footer>
 
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
